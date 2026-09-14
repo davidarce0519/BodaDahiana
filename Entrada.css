@@ -111,11 +111,12 @@ body {
 /* Responsivo Móvil */
 @media (max-width: 480px) {
     .welcome-card {
-        padding: 35px 20px;
+        padding: 35px 15px;
     }
 
     .welcome-title {
-        font-size: 3.2rem;
+        font-size: 2.2rem;
+        white-space: nowrap;
     }
 
     .btn-open-invitation {
