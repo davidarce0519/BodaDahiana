@@ -649,34 +649,52 @@ section,
 }
 
 /* ==========================================
-   AJUSTE ESPECÍFICO: MODAL TIPS Y NOTAS (ESPACIEDO AIREADO)
+   SEPARACIÓN EXACTA: TÍTULO A PUNTUALIDAD
    ========================================== */
+
+/* 1. Separa la imagen/icono superior del título */
 .modal-header-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px !important;
 }
 
+/* 2. Empuja fuertemente hacia abajo todo lo que esté debajo del título "Tips y Notas" */
+.modal-box h2,
+.modal-title,
+.modal-box .modal-title {
+    margin-bottom: 35px !important; /* Genera el espacio amplio que necesitas */
+    display: block !important;
+}
+
+/* 3. Agrega margen superior al contenedor de la lista */
 .modal-tips-list {
     text-align: left;
     list-style: none;
-    padding: 10px 5px 0 5px;
+    padding: 0 5px !important;
+    margin-top: 70px !important; /* Espacio extra de respaldo */
 }
 
+/* 4. Estilos y espaciado de cada ítem (incluyendo Puntualidad) */
 .modal-tips-list li,
 .tip-item {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.95rem;
     font-weight: 300;
     color: #444444;
-    margin-bottom: 24px; /* Mayor separación entre ítems para evitar saturación */
-    line-height: 1.7;    /* Altura de línea para respirar entre párrafos */
+    margin-bottom: 24px !important;
+    line-height: 1.7;
+}
+
+.modal-tips-list li:first-child,
+.tip-item:first-child {
+    margin-top: 30px !important; /* Distancia adicional para el primer ítem */
 }
 
 .modal-tips-list li:last-child,
 .tip-item:last-child {
-    margin-bottom: 10px;
+    margin-bottom: 10px !important;
 }
 
 .modal-tips-list li strong,
@@ -686,7 +704,7 @@ section,
 }
 
 .contact-block {
-    margin-top: 30px;
+    margin-top: 35px !important;
     padding-top: 20px;
     border-top: 1px solid #EAE5DC;
     text-align: center;
@@ -712,7 +730,7 @@ section,
     text-decoration: underline;
 }
 
-/* Responsivo para Celulares */
+/* Responsivo Móvil */
 @media (max-width: 768px) {
     .cards-grid {
         flex-direction: column;
@@ -730,6 +748,12 @@ section,
 
     .modal-box {
         padding: 35px 20px;
+    }
+
+    .modal-box h2,
+    .modal-title,
+    .modal-box .modal-title {
+        margin-bottom: 30px !important;
     }
 
     .modal-custom-img {
