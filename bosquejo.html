@@ -455,81 +455,6 @@
               stroke="#C5A053" stroke-width="1.8" fill="none" opacity="0.8"/>
     </svg>
 </div>
-<!-- ==========================================
-     SECCIÓN: CONFIRMACIÓN DE ASISTENCIA (CENTRADA)
-     ========================================== -->
-<section class="rsvp-section">
-
-    <!-- Título fuera de la card -->
-    <div class="rsvp-header">
-        <h2 class="rsvp-title">Confirmar Asistencia</h2>
-        <p class="rsvp-subtitle">Tu presencia es muy importante para nosotros. Por favor confirma tu asistencia.</p>
-    </div>
-
-    <!-- Contenedor centrado para la tarjeta -->
-    <div class="rsvp-card-container">
-        <!-- Tarjeta individual con la misma clase .fiesta-card -->
-        <div class="fiesta-card rsvp-card rsvp-observer">
-            <h3 class="card-title">Asistencia</h3>
-            
-            <!-- Animación CSS: Carta/Sobre abriéndose al scroll -->
-            <div class="card-icon-wrapper">
-                <div class="envelope-wrapper">
-                    <div class="envelope">
-                        <div class="envelope-flap"></div>
-                        <div class="envelope-pocket"></div>
-                        <div class="envelope-letter">
-                            <span class="letter-text">RSVP</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <p class="card-text">¡Nos encantaría contar contigo! Confirma tu presencia aquí.</p>
-
-            <!-- Botón de redirección editable -->
-            <a href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAZAAJwFTbpUNDNHSVFHMlNKOUhXWFhCSTBYRjc1VVdPUy4u&origin=lprLink&route=shorturl" target="_blank" class="modal-trigger-btn rsvp-btn">
-                CONFIRMAR
-            </a>
-        </div>
-    </div>
-</section>
-
-<!-- SCRIPT INTERSECTION OBSERVER -->
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const observerOptions = {
-            root: null,
-            threshold: 0.4 // Se activa al visibilizar el 40% de la tarjeta
-        };
-
-        const rsvpObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("animate");
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-
-        const rsvpCard = document.querySelector(".rsvp-observer");
-        if (rsvpCard) {
-            rsvpObserver.observe(rsvpCard);
-        }
-    });
-</script>
-
-<!-- DIVISOR ONDULADO DORADO (Insertar entre secciones) -->
-<div class="ribbon-divider ribbon-divider-straight" aria-hidden="true">
-    <svg viewBox="0 0 1440 180" preserveAspectRatio="none">
-        <path d="M0,90 C320,30 640,150 960,70 C1200,10 1360,110 1440,90" 
-              stroke="#D3B168" stroke-width="2" fill="none" opacity="0.85"/>
-        <path d="M0,110 C280,50 600,70 920,130 C1180,170 1380,30 1440,110" 
-              stroke="#E2C482" stroke-width="1.5" fill="none" opacity="0.75"/>
-        <path d="M0,130 C360,170 700,-10 1000,60 C1220,110 1350,90 1440,110" 
-              stroke="#C5A053" stroke-width="1.8" fill="none" opacity="0.8"/>
-    </svg>
-</div>
 
 <!-- ==========================================
      SECCIÓN: LLUVIA DE SOBRES CON ANIMACIÓN COMPLETA
@@ -626,6 +551,80 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+</script>
+<!-- DIVISOR ONDULADO DORADO (Insertar entre secciones) -->
+<div class="ribbon-divider ribbon-divider-straight" aria-hidden="true">
+    <svg viewBox="0 0 1440 180" preserveAspectRatio="none">
+        <path d="M0,90 C320,30 640,150 960,70 C1200,10 1360,110 1440,90" 
+              stroke="#D3B168" stroke-width="2" fill="none" opacity="0.85"/>
+        <path d="M0,110 C280,50 600,70 920,130 C1180,170 1380,30 1440,110" 
+              stroke="#E2C482" stroke-width="1.5" fill="none" opacity="0.75"/>
+        <path d="M0,130 C360,170 700,-10 1000,60 C1220,110 1350,90 1440,110" 
+              stroke="#C5A053" stroke-width="1.8" fill="none" opacity="0.8"/>
+    </svg>
+</div>
+<!-- ==========================================
+     SECCIÓN: CONFIRMACIÓN DE ASISTENCIA (CENTRADA)
+     ========================================== -->
+<section class="rsvp-section">
+
+    <!-- Título fuera de la card -->
+    <div class="rsvp-header">
+        <h2 class="rsvp-title">Confirmar Asistencia</h2>
+        <p class="rsvp-subtitle">Tu presencia es muy importante para nosotros. Por favor confirma tu asistencia.</p>
+    </div>
+
+    <!-- Contenedor centrado para la tarjeta -->
+    <div class="rsvp-card-container">
+        <!-- Tarjeta individual con la misma clase .fiesta-card -->
+        <div class="fiesta-card rsvp-card rsvp-observer">
+            <h3 class="card-title">Asistencia</h3>
+            
+            <!-- Animación CSS: Carta/Sobre abriéndose al scroll -->
+            <div class="card-icon-wrapper">
+                <div class="envelope-wrapper">
+                    <div class="envelope">
+                        <div class="envelope-flap"></div>
+                        <div class="envelope-pocket"></div>
+                        <div class="envelope-letter">
+                            <span class="letter-text">RSVP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="card-text">¡Nos encantaría contar contigo! Confirma tu presencia aquí.</p>
+
+            <!-- Botón de redirección editable -->
+            <a href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAZAAJwFTbpUNDNHSVFHMlNKOUhXWFhCSTBYRjc1VVdPUy4u&origin=lprLink&route=shorturl" target="_blank" class="modal-trigger-btn rsvp-btn">
+                CONFIRMAR
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- SCRIPT INTERSECTION OBSERVER -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const observerOptions = {
+            root: null,
+            threshold: 0.4 // Se activa al visibilizar el 40% de la tarjeta
+        };
+
+        const rsvpObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("animate");
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        const rsvpCard = document.querySelector(".rsvp-observer");
+        if (rsvpCard) {
+            rsvpObserver.observe(rsvpCard);
+        }
+    });
 </script>
 </body>
 </html>
