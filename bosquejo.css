@@ -729,6 +729,42 @@ section,
     color: var(--green-dark, #4A6B62);
     text-decoration: underline;
 }
+/* ==========================================
+   ESTILOS DRESS CODE: SEMI-FORMAL Y VERDE OLIVA
+   ========================================== */
+
+/* Texto descriptivo bajo "Semi-formal" */
+.modal-description-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #555555;
+    margin: 12px 0 20px 0;
+    line-height: 1.5;
+    padding: 0 10px;
+}
+
+/* Destacado de BLANCO en cursiva y verde oliva */
+.highlight-olive-cursive {
+    font-family: 'Alex Brush', cursive; /* O la fuente cursiva de tu proyecto */
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--green-dark, #4A6B62) !important; /* Verde oliva botánico */
+    display: inline-block;
+    margin: 4px 0;
+    line-height: 1;
+}
+
+/* Ajuste general del bloque de reserva */
+.modal-reservation-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: #666666;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+    margin-top: 15px;
+}
 
 /* Responsivo Móvil */
 @media (max-width: 768px) {
